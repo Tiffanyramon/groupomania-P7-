@@ -14,7 +14,7 @@ const normalizePort = val => {
     return false;
 };
 // Port utilise par l'appli express
-const port = normalizePort(process.env.Port ||'3000');
+const port = normalizePort(process.env.Port ||'3001');
 app.set ('port', port);
 //recherche erreur
 const errorHandler = error => {
