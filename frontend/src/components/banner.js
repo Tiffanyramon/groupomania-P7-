@@ -1,4 +1,4 @@
-import '../style/banner.css';
+import '../styles/banner.css';
 
 function Banner(){
      const title ='Groupomania'
