@@ -1,4 +1,4 @@
-/*import '../styles/compte.css';
+import '../styles/compte.css';
 
 function Compte(){
    
@@ -6,4 +6,4 @@ function Compte(){
   
 }
 
-export default Compte*/
+export default Compte

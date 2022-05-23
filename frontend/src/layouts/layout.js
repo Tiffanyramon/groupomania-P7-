@@ -1,10 +1,10 @@
-import Banner from'../banner';
+import Header from'../header';
 
 const Layout =({ children }) => {
 
     return(
         <>
-             <Banner />
+             <Header />
         
              <main>
                {children}

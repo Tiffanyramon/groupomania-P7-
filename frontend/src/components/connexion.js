@@ -1,7 +1,7 @@
 import '../styles/connexion.css';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import Layout from '/layout/layout';
+import Layout from '/layouts/layout';
 import {useNavigate } from 'react-router-dom';
 
 function Connexion(){
@@ -34,9 +34,9 @@ function Connexion(){
                  <div>
                      <label htmlFor="">mot de passe</label>
                      <input type="password" {...register('password')} />
-                     <h2>le mot de passe doit contenir minimun 1 majuscule,1 chiffre, 7 lettres</h2>
                  </div>
                  <button>connexion</button>
+                 <h2>Nouveau? Inscrivez-vous!</h2>
                  </form>
              </div>
         </div>

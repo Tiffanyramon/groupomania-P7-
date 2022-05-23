@@ -1,9 +1,9 @@
-import '../styles/banner.css';
+import '../styles/header.css';
 
-function Banner(){
+function Header(){
      const title ='Groupomania'
      return (
-          <div className='group-banner'>
+          <div className='group-header'>
                <h1 className='group-title'>{title}</h1>
                <button onclick="connexion()">
                     connexion
@@ -19,4 +19,4 @@ function Banner(){
   
 }
 
-export default Banner
+export default Header
