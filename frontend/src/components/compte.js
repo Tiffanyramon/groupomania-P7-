@@ -1,9 +1,9 @@
 /*import '../styles/compte.css';
 
-function compte(){
+function Compte(){
    
     
   
 }
 
-export default compte*/
+export default Compte*/

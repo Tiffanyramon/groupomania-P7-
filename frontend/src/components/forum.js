@@ -1,9 +1,9 @@
-/*import '../style/forum.css';
+import '../style/forum.css';
 
-function forum(){
+function Forum(){
    
     
   
 }
 
-export default forum*/
+export default Forum

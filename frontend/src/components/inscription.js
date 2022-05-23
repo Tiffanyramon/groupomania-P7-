@@ -1,9 +1,9 @@
-/*import '../style/inscription.css';
+import '../style/inscription.css';
 
-function inscription(){
+function Inscription(){
    
     
   
 }
 
-export default inscription*/
+export default Inscription

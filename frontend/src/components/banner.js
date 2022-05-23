@@ -8,9 +8,12 @@ function Banner(){
                <button onclick="connexion()">
                     connexion
                </button>
-               <button onclick="s'identifier()">
-                    s'indentifier
+               <button onclick="inscription()">
+                    inscription
                </button>
+               <button onclick="deconnexion()">
+                    deconnexion
+               </button>     
           </div>
      )
   
