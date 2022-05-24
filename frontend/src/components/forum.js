@@ -30,7 +30,7 @@ function Forum(){
                                 <imput type="text"/>
                             </div>
                         
-                                <button>poster</button>
+                                <button>Publier</button>
                                 </form> 
                 
                     </div>

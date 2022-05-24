@@ -36,7 +36,7 @@ function Connexion(){
                      <input type="password" {...register('password')} />
                  </div>
                  <button>connexion</button>
-                 <h2>Nouveau? Inscrivez-vous!</h2>
+                 <h2>Nouveau? <button>Inscrivez-vous!</button></h2>
                  </form>
              </div>
         </div>
