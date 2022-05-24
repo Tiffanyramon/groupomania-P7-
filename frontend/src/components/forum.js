@@ -1,7 +1,7 @@
 import '../styles/forum.css';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import Layout from '/layouts/layout';
+import Layout from '../layouts/layout';
 import {useNavigate } from 'react-router-dom';
 
 function Forum(){
@@ -27,7 +27,7 @@ function Forum(){
                             
                             <div>
                                 <label htmlFor="">exprimez-vous...</label>
-                                <imput type="text"/>
+                                <input type="text"/>
                             </div>
                         
                                 <button>Publier</button>

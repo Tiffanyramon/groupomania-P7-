@@ -1,7 +1,7 @@
 import '../styles/connexion.css';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import Layout from '/layouts/layout';
+import Layout from '../layouts/layoutun';
 import {useNavigate } from 'react-router-dom';
 
 function Connexion(){
@@ -15,6 +15,7 @@ function Connexion(){
         axios.post("http://localhost:3001/api/user/login", data)
         .then((result) => {
             localStorage.token =result.data.token
+            axios.defaults.headers.common.Authorization = "Bearer " + result.data.token
             navigate("/forum")
         })
         .catch((error) => console.log(error))

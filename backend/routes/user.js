@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 const userctrl = require('../controllers/user');
 const password = require ('../middleware/password');
+const user = require('../middleware/user');
 
 //route créa compte 
 router.post('/signup', password,userctrl.signUp);
@@ -10,15 +11,15 @@ router.post('/signup', password,userctrl.signUp);
 router.post('/login', userctrl.login);
 
 //route modification user
-//router.put('/:id', userctrl.editUser);
+//router.put('/:id',user, userctrl.editUser);
 
 //route ensemble user
-//router.get('/', usercrtl.getAllUser);
+//router.get('/', user,userctrl.getAllUser);
 
 //route affichage connexion user
-//router.get('/:id', userctrl.getOnUser);
+//router.get('/:id',user, userctrl.getOnUser);
 
 //route suppression user
-///router.delete('/:id', userctrl.deleteUser);
+//router.delete('/:id',user, userctrl.deleteUser);
 
 module.exports = router; 

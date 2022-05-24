@@ -7,16 +7,16 @@ multer = require('../middleware/multer-config');
 const commentairectrl = require('../controllers/commentaire');
 
 // route créa commentaire
-router.post('/', user, multer, commentairectrl.createCommentaire);
+router.post('/', user, commentairectrl.createCommentaire);
 
 //route emsemble commentaire
-router.get('/', commentairectrl.getAllCommentaire);
+router.get('/',user, commentairectrl.getAllCommentaire);
 
 //route un commentaire
-router.get('/:id', commentairectrl.getOneCommentaire);
+router.get('/:id', user,commentairectrl.getOneCommentaire);
 
 //route modification commentaire
-router.put('/:id', user, multer,commentairectrl.modifyCommentaire);
+router.put('/:id', user,commentairectrl.modifyCommentaire);
 
 //route aime ou non commentaire 
 //router.post('/:id/like', user, commentairectrl.likeNotCommentaire);

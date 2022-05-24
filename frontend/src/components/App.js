@@ -5,6 +5,7 @@ import'../styles/connexion.css';
 import'../styles/forum.css';
 import'../styles/inscription.css';
 
+import axios from 'axios';
 import Connexion from './connexion';
 import Inscription from'./inscription';
 import Forum from './forum';
@@ -18,13 +19,13 @@ import {
 
 
 function App() {
-
+  axios.defaults.headers.common.Authorization = "Bearer " + localStorage.token
   return (
     <BrowserRouter>
       <Routes>
         <Route path="/forum" element={<Forum/>} />
         <Route path="/login" element={<Connexion/>} />
-        <Route path="/signup" element={<Inscription/>} />
+        <Route path="/inscription" element={<Inscription/>} />
         <Route path="/compte" element={<Compte/>} />
       </Routes>
    </BrowserRouter>
