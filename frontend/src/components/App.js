@@ -16,6 +16,13 @@ import {
   Route,
 } from "react-router-dom";
 
+<div>
+<h1>Bienvenue, sur votre réseau soial d'entreprise</h1>
+<h2>Écrivez, partagez, étabilissez des liens</h2>
+
+</div>
+ 
+
 
 
 function App() {

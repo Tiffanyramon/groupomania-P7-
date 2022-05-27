@@ -17,7 +17,7 @@ function Headerun(){
                   <button> inscription </button>
               </Link> 
 
-                <button onClick={deconnexion}>
+                <button onClick={"/deconnexion"}>
                      deconnexion </button>     
           </div>
      )

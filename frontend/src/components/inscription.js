@@ -35,15 +35,11 @@ function Inscription(){
                         <h1>Inscription</h1>
                         <div>
                             <label htmlFor="">nom</label>
-                            <input type="text"/>
+                            <input type="text" {...register('nom')}/>
                         </div>
                         <div>
                             <label htmlFor="">prénom</label>
-                            <input type="text"/>
-                        </div>
-                        <div>
-                            <label htmlFor="">département</label>
-                            <input type="text" />
+                            <input type="text"{...register('prenom')}/>
                         </div>
                         <div>
                             <label htmlFor="">email</label>

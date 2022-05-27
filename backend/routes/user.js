@@ -11,15 +11,15 @@ router.post('/signup', password,userctrl.signUp);
 router.post('/login', userctrl.login);
 
 //route modification user
-//router.put('/:id',user, userctrl.editUser);
+router.put('/:id',user, userctrl.modifyUser);
 
 //route ensemble user
-//router.get('/', user,userctrl.getAllUser);
+router.get('/', user,userctrl.getAllUser);
 
 //route affichage connexion user
-//router.get('/:id',user, userctrl.getOnUser);
+router.get('/:id',user, userctrl.getOneUser);
 
 //route suppression user
-//router.delete('/:id',user, userctrl.deleteUser);
+router.delete('/:id',user, userctrl.deleteUser);
 
 module.exports = router; 
