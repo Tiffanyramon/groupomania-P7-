@@ -1,7 +1,7 @@
 import '../styles/connexion.css';
 import { useForm } from 'react-hook-form';
 import axios from 'axios';
-import Layout from '../layouts/layoutun';
+//import Layout from '../layouts/layoutun';
 import {useNavigate } from 'react-router-dom';
 
 function Connexion(){
@@ -22,9 +22,9 @@ function Connexion(){
     }
 
     return (
-        <Layout>
+        //<Layout>
              
-        <div>
+        <div className="container">
              <div className="formulaire">
                  <form  onSubmit={handleSubmit(onSubmit)} action="" method="post">
                  <h1>Connexion</h1>
@@ -40,8 +40,13 @@ function Connexion(){
                  <h2>Nouveau? <button>Inscrivez-vous!</button></h2>
                  </form>
              </div>
+             <div class="ombre-1"> </div>
+             <div class="ombre-2"> </div>
+             <div class="ombre-3"> </div>
+             <div class="ombre-4"> </div>
+             <div class="ombre-5"> </div>
         </div>
-        </Layout>
+        //</Layout>
         
     )
    
